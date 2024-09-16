@@ -1,0 +1,20 @@
+body {
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(170, 151, 115);
+}
+a {
+    color: burlywood;
+}
+a:hover {
+    color: burlywood;
+}
+
+button{
+    background-color:burlywood;
+    color: rgb(170, 151, 115);
+    border: 2px solid whitesmoke;
+    margin-top : 15px;
+    margin-bottom: 10px;
+}
