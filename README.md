@@ -1,66 +1,79 @@
-📬 Mail App – Django Project
+🛒 Django Auction Commerce App
 
-This is a web application built with Django, featuring Python-based backend logic, light JavaScript for interactivity, and clean HTML/CSS templates.
-It demonstrates core concepts such as authentication, routing, template rendering, and data handling with Django’s ORM.
+This is a backend-focused Auction Commerce Web Application built using Django.
+It allows users to create listings, place bids, add items to their watchlist, and manage auction activity.
+The project emphasizes Python, Django ORM, authentication, and backend logic with simple HTML and light JavaScript.
 
-🚀 Features
+🔥 Core Features
 
-User authentication (login, logout, register)
+User authentication (register, login, logout)
 
-Mail inbox page
+Create auction listings
 
-Dynamic front-end behavior via JavaScript (inbox.js)
+Place bids on items
 
-Clean HTML templates (layout.html, inbox.html, etc.)
+Add listings to a personal watchlist
 
-Django ORM for database interactions
+Category filtering
 
-Custom views and URL routing
+Close auctions (for listing owners)
 
-Static styling with CSS
+Django Admin integration
+
+Clean backend logic and models using Django ORM
+
+🧩 Technologies Used
+
+Python (Django Framework)
+
+HTML (basic templates)
+
+CSS (minimal styling)
+
+JavaScript (light interactions)
+
+SQLite database
 
 📁 Project Structure
-mail/
-│── migrations/
-│── static_mail/
-│   └── styles.css
-│── templates/mail/
-│   ├── inbox.html
-│   ├── layout.html
-│   ├── login.html
-│   └── register.html
-│── admin.py
-│── apps.py
-│── models.py
-│── tests.py
-│── views.py
-│── urls.py
-│── inbox.js
+commerce/
+│── auctions/
+│   ├── migrations/
+│   ├── static/
+│   ├── templates/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── forms.py
+│   ├── views.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── commerce/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── db.sqlite3
+└── manage.py
 
-project3/
-│── settings.py
-│── urls.py
-│── wsgi.py
-│── asgi.py
+⚙️ Installation & Setup
 
-manage.py
-db.sqlite3
-
-🛠 Installation and Setup
-
-Follow these steps to run the project locally:
+Follow these steps to run the project locally.
 
 1. Clone the repository
 git clone https://github.com/iree26/commerce.git
-
 cd main
 
-3. Create a virtual environment
+
+If this project is in a different repo, tell me the repo name and I will update it.
+
+2. Create a virtual environment
 py -m venv venv
 
-4. Activate the virtual environment
+3. Activate the virtual environment
 
-Windows (PowerShell):
+Windows:
 
 venv\Scripts\Activate
 
@@ -69,16 +82,16 @@ macOS/Linux:
 
 source venv/bin/activate
 
-4. Install requirements
+4. Install dependencies
 pip install -r requirements.txt
 
 5. Apply migrations
 py manage.py migrate
 
-6. Run the development server
+6. Start the Django development server
 py manage.py runserver
 
 
-Then visit:
+Then open in your browser:
 
 http://127.0.0.1:8000/
