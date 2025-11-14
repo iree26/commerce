@@ -51,13 +51,14 @@ db.sqlite3
 Follow these steps to run the project locally:
 
 1. Clone the repository
-git clone https://github.com/iree26/main.git
+git clone https://github.com/iree26/mail.git
+
 cd main
 
-2. Create a virtual environment
+3. Create a virtual environment
 py -m venv venv
 
-3. Activate the virtual environment
+4. Activate the virtual environment
 
 Windows (PowerShell):
 
